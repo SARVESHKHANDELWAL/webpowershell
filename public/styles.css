@@ -160,15 +160,25 @@ button {
   border-radius: 8px;
   font-family: Montserrat;
   color: #1f4e5f;
+  height: 645px;
 }
 
 .youtube {
-  position: absolute;
-  top: 725px;
+  position: relative;
+  top: 350px;
   left: 70px;
   border-radius: 6px;
 }
+.youtube2{
+  position: relative;
+  left:650px;
+  top:48px;
+  
+}
+.bottomfooter{
+  top:150px;
 
+}
 /* prevention */
 body {
   margin: 0px;

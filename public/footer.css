@@ -1,0 +1,93 @@
+.background{
+    background-color: #1F4E5F;
+    height:110px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid silver;
+  }
+  .vertical-line{
+     display: inline-block;
+      border-left: 2px solid silver;
+      height:100px;
+      position: relative;
+      left: 50%;
+      margin-left:-3px;
+      top:-75%;
+      
+      
+      
+      
+      
+
+        }
+        .hr a{
+          display:inline-block;
+          color: silver;
+          font-size: small;
+          font-style: initial;
+          text-decoration: none;
+          position: relative;
+          padding:5px;
+          margin-top: 4px;
+          padding-left: 20%;
+          top:auto;
+          bottom:-10px;
+
+
+        }
+        
+        .hr a:hover{
+          color: white;
+        }
+        .hr1 a{
+          display:inline-block;
+          color: silver;
+          font-size: small;
+          font-style: initial;
+          text-decoration: none;
+          padding:5px;
+          margin-top: 4px;
+          padding-left:200px;
+          left: 53%;
+          position: relative;
+          bottom:160px;
+        }
+        .hr1 a:hover{
+          color: white;
+        }
+        .second{
+          background-color:#AACFD0;
+          height: 50px;
+        }
+        .second1{
+          font-size:x-large;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+           position: relative;
+            z-index: 2;
+            padding: 0 20px;
+            top: 4px;
+            left:25%;
+           margin: 5px;
+            
+        }
+        .icon{
+          padding-left: 20%;
+          font-size:28px;
+          
+         
+        }
+        .icon a{
+          color:black;
+        
+        }
+        .icon a:hover{
+          color:white;
+        }
+
+          
+        
+        .footer-social-small {
+             font-size: 0.8em;
+              padding: 0px 20px;
+
+}

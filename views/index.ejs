@@ -1,0 +1,57 @@
+
+<%- include("header"); -%>
+  <div class="header"><span>COVID-19</span></div>
+  <div id="Mainarea">
+    <div class="mainarea"><em>Coronavirus disease (COVID-19)</em> is an infectious disease caused by a new virus.
+      The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding
+      close contact (1 meter or 3 feet) with people who are unwell.<br>
+     </div>
+      <p style="text-align:center; ">spread of corona worldwide</p>
+    </div>
+    
+    <div class="mainarea2">
+      <h2 >Coronavirus Cases</h2>
+      <p id="cases" style="text-align: center ;"></p>
+      <h2 style="text-align: center ;">Deaths</h2>
+      <p id="deaths" style="text-align: center ;"></p>
+      <h2 style="text-align:center;">Recovered</h2>
+      <p id="recovered" style="text-align: center ;"></p>
+      <h2 style="text-align: center ;" >Active Cases</h2>
+      <p id="Acases" style="text-align: center ;"></p>
+      <h2 style="text-align: center ;">Critical Cases</h2>
+      <p id="Ccases" style="text-align: center ;"></p>
+      <h2 style="text-align:center;">Affected Countries</h2>
+      <p id="Affectedcountries" style="text-align: center ;"></p>
+    </div>
+    <div>
+
+    </div>
+    
+    
+  
+  
+  
+  
+  <script src="helper.js" type="text/javascript">
+
+  </script>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        document.getElementById("cases").innerHTML = myObj.cases;
+        document.getElementById("deaths").innerHTML = myObj.deaths;
+        document.getElementById("recovered").innerHTML = myObj.recovered;
+        document.getElementById("Acases").innerHTML = myObj.active;
+        document.getElementById("Ccases").innerHTML = myObj.critical;
+        document.getElementById("Affectedcountries").innerHTML = myObj.affectedCountries;
+      }
+    };
+    xmlhttp.open("GET", "https://corona.lmao.ninja/all#", true);
+    xmlhttp.send();
+    </script>
+    
+</body>
+
+</html>

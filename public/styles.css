@@ -1,6 +1,14 @@
 body {
   margin: 0px;
   padding: 0px;
+  
+  
+    height: 100%;
+  background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
+    width:-webkit-fill-available;
+  
+  
+  
 }
 
 .nav {

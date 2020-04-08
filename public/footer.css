@@ -91,3 +91,6 @@
               padding: 0px 20px;
 
 }
+@-ms-viewport{
+  width: device-width;
+}

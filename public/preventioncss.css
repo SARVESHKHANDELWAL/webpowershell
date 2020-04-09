@@ -92,7 +92,7 @@ font-size: 1.2rem;
 }
 
 .mid2 img:hover {
-    webkit-filter: blur(4px);
+    -webkit-filter: blur(4px);
     filter: blur(4px);
     transform: translate(0);
   opacity: 1;

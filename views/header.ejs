@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="slidecss.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="symptomscss.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Gotu|Montserrat&display=swap" rel="stylesheet">
 </head>
@@ -19,8 +20,7 @@
     </ul>
     <ul class="sidelist">
 
-      <li><a href="/home
-        ">HOME</a></li>
+      <li><a href="/home">HOME</a></li>
       <li><a href="downloads.html">DOWNLOADS</a></li>
       <li><a href="/login">LOGIN</a></li>
     </ul>
@@ -34,7 +34,7 @@
     <div class="list">
       <ul class="k">
         <li><a href="#">Overview</a></li>
-        <li><a href="#">Symptoms</a></li>
+        <li><a href="/symptoms">Symptoms</a></li>
         <li><a href="/prevention">Prevention</a></li>
         <li><a href="#">Treatment</a></li>
         <li><a href="#">Blogs</a></li>
@@ -48,3 +48,28 @@
       <button type="submit" name="submit">SUBMIT</button>
     </div>
   </div>
+<script>
+var a = 1;
+
+  function operate() {
+
+    if (a % 2 == 0) {
+      close();
+    } else {
+      open();
+    }
+  }
+
+  function open() {
+    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("btn").style.left = "255px";
+    a++
+  }
+
+  function close() {
+    document.getElementById("sidenav").style.width = "0px";
+    document.getElementById("btn").style.left = "5px";
+    document.getElementById("sidenav").style.border = "none";
+    a++
+  }
+  </script>

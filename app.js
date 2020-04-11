@@ -18,6 +18,9 @@ app.get("/",function(req,res){
 app.get("/prevention",function(req,res){
   res.render("prevention");
 });
+app.get("/symptoms",function(req,res){
+  res.render("symptoms");
+});
 app.get("/home",function(req,res){
   res.render("index");
 });

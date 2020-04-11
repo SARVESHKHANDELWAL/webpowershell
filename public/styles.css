@@ -1,14 +1,11 @@
 body {
   margin: 0px;
   padding: 0px;
-  
-  
-    height: 100%;
-  background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
-    width:-webkit-fill-available;
-  
-  
-  
+
+  height: 100%;
+background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
+  width:-webkit-fill-available;
+
 }
 
 .nav {
@@ -142,7 +139,7 @@ button {
   font-size: 130px;
   font-family: Gotu;
   color: #fff;
-  background-image: url("cor.png");
+  background-image: url("");
 }
 
 .mainarea {

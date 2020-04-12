@@ -5,8 +5,9 @@ body {
   height: 100%;
 background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
   width:-webkit-fill-available;
-
+  
 }
+
 
 .nav {
   background-color: #79a8a9;
@@ -139,7 +140,11 @@ button {
   font-size: 130px;
   font-family: Gotu;
   color: #fff;
-  background-image: url("");
+  background-image: url("https://newsin.asia/wp-content/uploads/2020/03/Corona.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  
 }
 
 .mainarea {
@@ -182,6 +187,12 @@ button {
 }
 .bottomfooter{
   top:150px;
+
+}
+.maingif{
+  position:relative;
+  left:150px;
+  width:100%;
 
 }
 

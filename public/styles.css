@@ -45,16 +45,7 @@ background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
   color: #fff;
 }
 
-input[type=text] {
-  box-sizing: border-box;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  position: absolute;
-  right: 150px;
-  top: 20px;
-  height: 30px;
-  text-align: center;
-}
+
 
 .ent {
   display: inline-flex;
@@ -241,16 +232,7 @@ button {
     color: #fff;
   }
   
-  input[type=text] {
-    box-sizing: border-box;
-    border: 2px solid #fff;
-    border-radius: 4px;
-    position: absolute;
-    right: 150px;
-    top: 20px;
-    height: 30px;
-    text-align: center;
-  }
+  
   
   .ent {
     display: inline-flex;

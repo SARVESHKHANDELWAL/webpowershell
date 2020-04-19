@@ -3,7 +3,7 @@
   const bodyParser = require('body-parser');
   const _ = require('lodash');
   const ejs = require('ejs');
-
+  const mongoose=require("mongoose");
 
   const app=express();
   app.set('view engine', 'ejs');
@@ -11,6 +11,19 @@
 app.use(express.static("public"));
 app.use(express.static("images"));
 
+mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser:true,useUnifiedTopology:true});
+
+const userSchema={
+  firstname:String,
+  lastname:String,
+  email:String,
+  rateus:Number,
+  subject:String
+};
+
+
+
+const User=new mongoose.model("User",userSchema);
 
 app.get("/",function(req,res){
   res.render("index");
@@ -27,6 +40,34 @@ app.get("/home",function(req,res){
 app.get("/login",function(req,res){
   res.render("login");
 })
+app.get("/overview",function(req,res){
+  res.render("table");
+})
+app.get("/faq",function(req,res){
+  res.render("faq");
+})
+app.get("/feedback",function(req,res){
+  res.render("feedback");
+})
+app.post("/feedback",function(req,res){
+ const newUser=new User({
+   firstname:req.body.firstname,
+   lastname:req.body.lastname,
+   email:req.body.email,
+   rateus:req.body.rateus,
+   suggestion:req.body.suggestion
+ });
+ newUser.save(function(err){
+   if(err){
+     console.log(err);
+     res.render("feedback");
+   }
+   else
+   {
+     res.render("index");
+   }
+ });
+});
 app.post("/Login.html",function(req){
   const email=req.body.email;
 

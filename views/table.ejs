@@ -1,0 +1,116 @@
+<%- include('header'); -%>
+<div class="head1">
+<h1 >
+    country data
+</h1>
+</div>
+
+<table>
+  <tr>
+    <th>country</th>
+    <th>cases</th>
+    <th>deaths</th>
+    <th>recovered</th>
+    <th>active</th>
+    <th>critical</th>
+    <th>casesPerOneMillion</th>
+    <th>deathsPerOneMillion</th>
+    <th>tests</th>
+    <th>testsPerOneMillion</th>
+    <th>continent</th>
+    
+  </tr>
+  <tr>
+  
+    <td><p id="country"></p></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="bottomfooter">
+      <footer>
+      <div class="background">
+        <span class="hr">
+          <a href="#">About Us</a><br>
+          <a href="#">Feedback</a><br>
+          <a style="text-align: center;" href="#">Downloads</a><br>
+          
+        </span>
+        <span class="vertical-line">
+        </span>
+        <span class="hr1">
+          <a href="#">Contact Us</a><br>  
+          <a style="text-align: center;" href="#">FAQ</a><br>
+          <a style="text-align: center;" href="#">Home</a><br>
+        </span>
+        
+       </div>
+    
+       
+       
+       <div class="second">
+         <span  class="second1">
+        <span>CONNECT <span class="footer-social-small">with</span>US
+        </span>
+        <span class="icon"><a href="#">
+        <i class="fa fa-facebook-square"></a></i>
+        <a href="#"><i class="fa fa-git-square" ></i></a>
+        <a href="#"><i class="fa fa-instagram" ></a></i>
+        <a href="#"><i class="fa fa-twitter" ></i></a>
+        </span>
+              </div>
+            </footer>
+            </div>
+
+
+
+
+</body>
+</html>
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        //for(int i=0;i<212;i++)
+        
+        document.getElementById("country").innerHTML = myObj.0.country;
+        
+        document.getElementById("cases").innerHTML = myObj.cases;
+        document.getElementById("deaths").innerHTML = myObj.deaths;
+        document.getElementById("recovered").innerHTML = myObj.recovered;
+        document.getElementById("Acases").innerHTML = myObj.active;
+        document.getElementById("Ccases").innerHTML = myObj.critical;
+        document.getElementById("Affectedcountries").innerHTML = myObj.affectedCountries;
+      }
+    };
+    xmlhttp.open("GET", "https://corona.lmao.ninja/v2/countries", true);
+    xmlhttp.send();
+    </script>

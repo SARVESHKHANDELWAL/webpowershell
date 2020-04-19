@@ -51,18 +51,7 @@ background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
   display: inline-flex;
 }
 
-button {
-  position: absolute;
-  right: 40px;
-  width: 90px;
-  height: 40px;
-  color: black;
-  top: 15px;
-  border-radius: 8px;
-  border: 0px;
-  color: #fff;
-  background-color: #856c8b;
-}
+
 
 #sidenav {
   height: 100%;
@@ -238,18 +227,7 @@ button {
     display: inline-flex;
   }
   
-  button {
-    position: absolute;
-    right: 40px;
-    width: 90px;
-    height: 40px;
-    color: black;
-    top: 15px;
-    border-radius: 8px;
-    border: 0px;
-    color: #fff;
-    background-color: #856c8b;
-  }
+  
   
   #sidenav {
     height: 100%;

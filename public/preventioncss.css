@@ -39,7 +39,8 @@ background: linear-gradient(25deg, #aacfd0 80%, #1f4e5f 20%);
 font-style: Montserrat;
 font-size: 1.2rem;
 }
-.head1 {
+.head1 
+{
   display:inline-flex;
   background-color: #f4f7f7;
   margin: 0px;
@@ -50,7 +51,7 @@ font-size: 1.2rem;
    width:inherit;
    z-index: 1;
    height:7rem;
-}
+ }
 .icon {
   width: 40px;
   position: relative;
@@ -199,3 +200,4 @@ font-size: 1.2rem;
 {
   font-size: 2rem;
 }
+

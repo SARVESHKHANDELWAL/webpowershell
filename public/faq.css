@@ -1,0 +1,86 @@
+.head1 h1
+{
+color: #1f4e5f;
+  padding: 8px;
+  margin:auto;
+  font-size: 2.5rem;
+  position: relative;
+  top:40px;
+  left:20px;
+  font-family: Montserrat;
+  letter-spacing: 1px;
+  right: 130px;
+  
+}
+.head1 {
+  display:inline-flex;
+  background-color: #f4f7f7;
+  margin: 0px;
+  padding: 3px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+   box-shadow: 0 8px 6px -6px black;
+   width:inherit;
+   z-index: 1;
+   height:7rem;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width:900px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  width:900px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.container2
+{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 30px;
+  margin:20px 30px;
+  box-shadow: 10px 10px 5px GREY;
+}
+@media only screen and (max-width: 600px) {
+  .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width:700px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+}

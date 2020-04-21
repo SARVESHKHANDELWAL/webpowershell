@@ -1,0 +1,13 @@
+.heading{
+  position: absolute;
+  top:60px;
+  color:#1eb2a6;
+  font-family: Montserrat;
+    width:-webkit-fill-available;
+    text-align: center;
+    font-size: 3rem;
+}
+.main{
+  position: absolute;
+  top:200px;  
+}

@@ -1,0 +1,34 @@
+{
+  "name": "webpowershell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilgupta2001/webpowershell.git"
+  },
+  "author": "nikhil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilgupta2001/webpowershell/issues"
+  },
+  "homepage": "https://github.com/nikhilgupta2001/webpowershell#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.9",
+    "mongoose-findorcreate": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.0.1",
+    "request": "^2.88.2",
+    "session": "^0.1.0"
+  }
+}

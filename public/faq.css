@@ -70,6 +70,11 @@ color: #1f4e5f;
   margin:20px 30px;
   box-shadow: 10px 10px 5px GREY;
 }
+.bottomfooter6{
+   width: -webkit-fill-available;
+  position: absolute;
+  top:1850px;
+}
 @media only screen and (max-width: 600px) {
   .accordion {
   background-color: #eee;
